@@ -1,0 +1,22 @@
+{
+  "fruits": [
+    {
+      "name": "mango",
+      "quantity": "10",
+      "price": 10000,
+      "id": 1
+    },
+    {
+      "name": "Pankaji",
+      "quantity": "10",
+      "price": "2001",
+      "id": 2
+    },
+    {
+      "name": "carrot",
+      "quantity": "14",
+      "price": "3009",
+      "id": 3
+    }
+  ]
+}

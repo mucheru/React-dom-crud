@@ -1,24 +1,29 @@
+import { Routes, Route } from "react-router-dom";
+
 import logo from './logo.svg';
 import './App.css';
+import Layout from './component/shared/Layout';
+import AllFruits from './component/shared/pages/AllFruits';
+import AddFruits from './component/shared/pages/AddFruits';
+import UpdateFruit from "./component/shared/pages/UpdateFruit";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <Layout>
+      <Routes>
+        <Route path="/" element={<AllFruits/>}/>
+        <Route path="/add-fruit" element={<AddFruits />}></Route>
+        <Route path="/update-fruit/:id" element={<UpdateFruit />}></Route>
+
+        
+
+      </Routes>
+
+    </Layout>
+
+  
   );
 }
 
